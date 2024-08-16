@@ -1,0 +1,270 @@
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    background-color: #32567a;
+    padding: 1%;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 5%;
+}
+
+.header-title {
+    color: white;
+    font-size: 30px;
+}
+
+.header-logo {
+    width: 10px;
+    height: auto; 
+}
+
+.mainPage{
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+
+.bodyView{
+    display: flex;
+    width: 85%;
+    height: 100%;
+}
+
+.Sidebar{
+    width: 25%;
+    height: 100%;
+    background-color:#ededed;
+    padding: 1% 1% 1% 1%;
+    border-radius: 5px;
+    font-size: 18px;
+    overflow-y: auto;
+}
+
+.sidebarStyling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.selectize-input,
+.selectize-dropdown {
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+#score, #colors, #shortNames, #dir, #Experiments, #ShortName{
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.dirDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DirBtn{
+    background-color: #32567a;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.PlaceholderParams, .PlaceholderStyling, .PlaceholderAxis, .InteractivePlaceholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    margin: 5% 20% 5% 20%;
+    color: rgba(34, 34, 34, 0.4); /* Slightly faded dark gray text */
+    height: 20vh;
+}
+
+.button-ui-container{
+    margin: 5% 0% 5% 0%;
+
+    min-height: 20vh;
+}
+
+.ToggleBtn {
+    background-color: #c3c5c7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.ToggleBtn.toggledBtn {
+    /* Styles when toggled */
+    background-color: #32567a;
+    color: white;
+}
+
+.ToggleBtn.untoggledBtn {
+    /* Styles when untoggled */
+    background-color: #c3c5c7; 
+    color: black;
+}
+
+.btn:active {
+    background-color: initial;
+    border-color: initial;
+    color: initial;
+}
+
+.plot-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#plot, #save, #applyBtn{
+    background-color: #32567a;
+    color: #fff;
+    border: none;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 30%;
+}
+
+.Interactive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SaveBtnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+}
+
+.Entry, [class^="AxisEntry"]{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #32567a;
+}
+
+
+#OriginalName, #ShortName{
+    margin: 0%;
+}
+
+.colourpicker-input {
+    width: 150% !important; /* Adjust the width as needed */
+}
+
+.PlotNames, .AxisNames, .Ylimits{
+    display: flex;
+    justify-content: space-between;
+}
+
+.PlotParam, .PlotName{
+    width: 50%;
+}
+
+.plotTabs {
+    height: 100%; /* Adjust height as needed */
+    width: 80%;
+}
+.plotTabs .tabbable {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.plotTabs .tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 100%;
+
+}
+
+.plotTabs .tab-pane {
+    width: 90%;
+    height: 90%;
+}
+
+.shiny-plot-output {
+    width: 100%;
+    height: 100%;
+}
+
+.InteractiveArea{
+    width: 20%;
+    height: 100%;
+    background-color: #ededed;
+}
+
+.ToggleHeader, .MemberHeader{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+.ExperimentToggleContainer, .MemberHighlightContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.expToggleEntry{
+    margin-left: 10%;
+    font-size: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+#PLevelSelector, #MemberHighlight{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.Plevel, .HighlightedMembers{
+    width: 90%;
+}
