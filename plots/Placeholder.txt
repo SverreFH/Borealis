@@ -1,0 +1,1 @@
+Can freely be removed. Is needed for github to track the plots folder if otherwise empty
