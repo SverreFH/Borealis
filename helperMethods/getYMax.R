@@ -9,7 +9,7 @@ GetYMax <- function(input, param){
     if (is.null(yMax) || yMax == "") {
         yMax <- NULL
     } else {
-        yMax <- as.integer(yMax)
+        yMax <- as.double(yMax)
     }
     return(yMax)
 }

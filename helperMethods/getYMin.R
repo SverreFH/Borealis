@@ -9,7 +9,7 @@ GetYMin <- function(input, param){
     if (is.null(yMin) || yMin == "") {
         yMin <- NULL
     } else {
-        yMin <- as.integer(yMin)
+        yMin <- as.double(yMin)
     }
     return(yMin)
 }
