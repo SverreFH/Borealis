@@ -59,7 +59,7 @@ plotObserverServer <- function(input, output, session, selectedParams, plots, fi
             removeTab(inputId="dynamicTabs", target = allParams[[i]])
         })
         
-        shinyjs::delay(300, {
+        shinyjs::delay(500, {
             params <- selectedParams()
             lapply(seq_along(params), function(i) {
                 system_update(TRUE)

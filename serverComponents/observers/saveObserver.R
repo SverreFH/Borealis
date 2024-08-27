@@ -7,8 +7,13 @@
 #plots:             A list of plots
 #pValues:           A lsit of paramaters and their associated p values
 saveObserverServer <- function(input, output, session, selectedParams, plots, pValues){
-    # Define reactive placeholder for file name
-    pname <- reactive({
+    
+
+    # Use the placeholder in shinyFileSave
+
+    observeEvent(input$save, {
+        # Define reactive placeholder for file name
+        pname <- reactive({
         currentParams <- selectedParams()
         param <- input$dynamicTabs
         index <- which(currentParams == param)
@@ -23,12 +28,11 @@ saveObserverServer <- function(input, output, session, selectedParams, plots, pV
         plot_fmt <- "png"
         
         paste0(plot_dir, "/", param, "_", lev, "_", score, "_", period, "_", models, ".", plot_fmt)
-    })
+        })
 
-    # Use the placeholder in shinyFileSave
-    shinyFileSave(input, "save", roots = c(home = paste0(getwd())), session = session, filetypes = c("png"), defaultPath = pname())
+        shinyFileSave(input, "save", roots = c(home = paste0(getwd())), session = session, filetypes = c("png"), defaultPath = pname())
 
-    observeEvent(input$save, {
+
         print("Save called")
         plot_dir    = "plots"
         plot_fmt    <- "png"
